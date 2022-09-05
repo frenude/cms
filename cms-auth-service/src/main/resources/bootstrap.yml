@@ -1,0 +1,27 @@
+server:
+  port: 8081
+
+env:
+  addr: 39.103.193.144
+spring:
+  application:
+    name: cms-auth-service
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${env.addr}:8848
+      config:
+        server-addr: ${env.addr}:8848
+
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+

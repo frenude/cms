@@ -1,0 +1,23 @@
+server:
+  port: 8082
+
+env:
+  addr: 39.103.193.144
+spring:
+  application:
+    name: cms-getway-service
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${env.addr}:8848
+      config:
+        server-addr: ${env.addr}:8848
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+

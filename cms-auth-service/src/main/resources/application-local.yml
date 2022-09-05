@@ -1,0 +1,8 @@
+spring:
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+  redis:
+    database: 0
+    port: 6379
+    host: ${env.addr}
+    password: redis12530798

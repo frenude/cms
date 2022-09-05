@@ -1,0 +1,21 @@
+bootJar {
+    enabled = false
+}
+jar {
+    enabled = true
+}
+publishing {
+    publications {
+        library(MavenPublication) {
+            from components.java
+        }
+    }
+}
+dependencies {
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    implementation 'com.github.xiaoymin:knife4j-spring-boot-starter:3.0.3'
+    implementation 'cn.hutool:hutool-all:5.7.6'
+    implementation 'com.alibaba:fastjson:1.2.79'
+
+}

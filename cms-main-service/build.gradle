@@ -1,0 +1,28 @@
+dependencies {
+    // springboot
+    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+    // log4j2
+    implementation 'com.lmax:disruptor:3.4.4'
+    implementation 'org.springframework.boot:spring-boot-starter-log4j2'
+    // lombok
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    // swagger-ui
+    implementation 'com.github.xiaoymin:knife4j-spring-boot-starter:3.0.3'
+    // bootstrap.yml
+    implementation 'org.springframework.cloud:spring-cloud-starter-bootstrap'
+    // nacos
+    implementation 'com.alibaba.cloud:spring-cloud-starter-alibaba-nacos-discovery'
+    implementation 'com.alibaba.cloud:spring-cloud-starter-alibaba-nacos-config'
+    // mysql
+    runtimeOnly 'mysql:mysql-connector-java'
+    implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+    // mybatis-plus
+    implementation 'com.baomidou:mybatis-plus-boot-starter:3.4.3.1'
+    implementation 'cn.hutool:hutool-all:5.7.6'
+    implementation 'com.huohuaadx:cms-common-api:0.0.1-SNAPSHOT'
+}

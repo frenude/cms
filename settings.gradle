@@ -1,0 +1,6 @@
+rootProject.name = 'cms'
+include 'cms-common-api'
+include 'cms-main-service'
+include 'cms-auth-service'
+include 'cms-getway-service'
+

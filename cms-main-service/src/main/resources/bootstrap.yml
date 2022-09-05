@@ -1,0 +1,25 @@
+server:
+  port: 8080
+
+env:
+  addr: 39.103.193.144
+spring:
+  application:
+    name: cms-main-service
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${env.addr}:8848
+      config:
+        server-addr: ${env.addr}:8848
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+mybatis-plus:
+  configuration:
+    # 是否将sql打印到控制面板(该配置会将sql语句和查询的结果都打印到控制台)
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
